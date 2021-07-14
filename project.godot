@@ -1,0 +1,60 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "Ball",
+"language": "GDScript",
+"path": "res://Pong_03/Ball/Ball.gd"
+}, {
+"base": "Resource",
+"class": "BoundingBox",
+"language": "GDScript",
+"path": "res://Pong_03/Misc/BoundingBox.gd"
+}, {
+"base": "Resource",
+"class": "Collisions",
+"language": "GDScript",
+"path": "res://Pong_03/Misc/Collisions.gd"
+}, {
+"base": "Node2D",
+"class": "Paddle",
+"language": "GDScript",
+"path": "res://Pong_03/Paddle/Paddle.gd"
+}, {
+"base": "Paddle",
+"class": "PlayerPaddle",
+"language": "GDScript",
+"path": "res://Pong_03/Paddle/PlayerPaddle.gd"
+} ]
+_global_script_class_icons={
+"Ball": "",
+"BoundingBox": "",
+"Collisions": "",
+"Paddle": "",
+"PlayerPaddle": ""
+}
+
+[application]
+
+config/name="Test Game One"
+run/main_scene="res://Pong_03/PongGame.tscn"
+
+[display]
+
+window/stretch/mode="viewport"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
